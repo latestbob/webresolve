@@ -7,6 +7,7 @@ import './wallet.css';
 
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Wallet(){
 
@@ -783,9 +784,9 @@ function Wallet(){
             
                 <div className='text-right mt-5 px-4'>
                      <button onClick={function(e){
-                         setSelectedName("");
+                        //  setSelectedName("");
 
-                         handleRefresh();
+                        //  handleRefresh();
                      }} data-dismiss="modal"className='btn btn-danger text-light'>Cancel</button>
 
                 </div>
