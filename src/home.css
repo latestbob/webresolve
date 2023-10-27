@@ -1,0 +1,152 @@
+.mynav{
+    background-color: black;
+
+    border-bottom: 0.3px solid white;
+    
+}
+
+.brand{
+    color:white;
+    font-size: 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+}
+
+.search{
+    color:white;
+    font-size:20px;
+}
+
+.square{
+    color:none;
+    border: 2px solid white;
+    font-size:9px;
+}
+
+.validate {
+    border-radius:50px;
+    border:2px solid white;
+    padding:8px 35px;
+    color:white;
+    font-size: 18px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+}
+
+.validate:hover {
+    background-color: white;
+    color: #5142FC;
+}
+
+.hero{
+    min-height: 100vh;
+    background-color: black;
+    
+}
+
+.herotext {
+    color:white;
+    font-size: 52px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    line-height: 1.3;
+
+}
+
+.heropara{
+    color:white;
+    font-size: 22px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+
+}
+
+
+.greysection{
+    background-color: #F8F8F8;
+    min-height: 300px;
+}
+
+.greyimage{
+    width: 70px;
+}
+
+.greyheading{
+    font-size: 19px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(29, 29, 29);
+}
+
+.greyheading:hover{
+    color: #5142FC;
+}
+
+.greytext {
+    font-weight: 400;
+    font-size: 13px;
+   
+    color: #7A798A;
+}
+
+
+.whitediv{
+    background-color:white;
+    min-height: 350px;
+}
+
+.foothead {
+    color: #5142FC;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.footpara{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+   
+}
+
+.subscribe{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    color:black;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.mybtnn{
+    background-color: #5142FC;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .herotext {
+        color:white;
+        font-size: 35px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        line-height: 1.3;
+    
+    }
+
+    .heropara{
+        color:white;
+        font-size: 16px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 500;
+        line-height: 1.3;
+        padding:20px;
+    
+    }
+
+  }
