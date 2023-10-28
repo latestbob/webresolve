@@ -9,12 +9,18 @@ import second from './second.png';
 import third from './third.png';
 import fourth from './fourth.png';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
 function Home(){
+
+  
+
+
+
     return (
         <>
-            <nav class="navbar mynav justify-content-between py-4">
+            <nav class="navbar mynav fixed-top justify-content-between py-4">
                 <a class="navbar-brand brand">Webresolvefix</a>
                 <form class="form-inline">
                     {/* <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/> */}
@@ -24,7 +30,7 @@ function Home(){
                 </nav>
 
 
-                <section className='hero text-center py-5'>
+                <section id="hero" className='hero text-center py-5'>
                         <h2 className='herotext mt-5'>Validate initialize , <br/>  and synchronize your <br/> tokens on your wallets</h2>
 
                         <p className='heropara py-3'>Open And Decentralize Protocol For Syncing Various Wallet To Dapps Secure Server</p>
@@ -107,7 +113,7 @@ function Home(){
 
                 <section className='greysection py-5 row'>
 
-                    <div className='col-md-3 text-center'>
+                    <div className='col-md-3 col-3 text-center'>
                         <img src={first} className="greyimage"/>
 
                         <h3 className='greyheading'>Select Your Wallet</h3>
@@ -122,7 +128,7 @@ function Home(){
                     </div>
 
 
-                    <div className='col-md-3 text-center'>
+                    <div className='col-md-3 col-3 text-center'>
                         <img src={second} className="greyimage"/>
 
                         <h3 className='greyheading'>Validate Your Wallet</h3>
@@ -138,7 +144,7 @@ function Home(){
 
 
 
-                    <div className='col-md-3 text-center'>
+                    <div className='col-md-3 col-3 text-center'>
                         <img src={third} className="greyimage"/>
 
                         <h3 className='greyheading'>Generate QR Code</h3>
@@ -153,7 +159,7 @@ function Home(){
                     </div>
 
 
-                    <div className='col-md-3 text-center'>
+                    <div className='col-md-3 col-3 text-center'>
                         <img src={fourth} className="greyimage"/>
 
                         <h3 className='greyheading'>Save Wallet QR Code</h3>

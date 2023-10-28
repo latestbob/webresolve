@@ -124,11 +124,30 @@
     color: white;
 }
 
+.hero{
+    min-height: 100vh;
+    background-color: black;
+
+    padding:15px;
+    
+}
+
 
 
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+
+
+    .mynav{
+        background-color: black;
+    
+        border-bottom: 0.3px solid white;
+
+        display:flex;
+        flex-direction: row;
+        
+    }
 
     .herotext {
         color:white;
@@ -148,5 +167,22 @@
         padding:20px;
     
     }
+
+
+    .search{
+      display: none;
+    }
+
+    .validate {
+        border-radius:50px;
+        border:2px solid white;
+        padding:8px 35px;
+        color:white;
+        font-size: 15px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 500;
+    }
+    
+    
 
   }
