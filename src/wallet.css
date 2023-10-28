@@ -84,6 +84,9 @@
     text-align: center;
 }
 
+.myline{
+    margin-left: 50px;
+}
 
 
 
@@ -93,6 +96,10 @@
     .walletimage{
         width:80px;
        
+    }
+
+    .myline{
+        margin-left: 0;
     }
 
   }

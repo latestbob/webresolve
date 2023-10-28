@@ -30,7 +30,7 @@ function Home(){
                 </nav>
 
 
-                <section id="hero" className='hero text-center py-5'>
+                <section className='hero text-center py-5'>
                         <h2 className='herotext mt-5'>Validate initialize , <br/>  and synchronize your <br/> tokens on your wallets</h2>
 
                         <p className='heropara py-3'>Open And Decentralize Protocol For Syncing Various Wallet To Dapps Secure Server</p>

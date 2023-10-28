@@ -688,12 +688,12 @@ function Wallet(){
 
 
 
-            <ul class="nav nav-pills ml-5" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills myline" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Phrase</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Keystore JSON</button>
+                        <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span className='pushdown'>Keystore  JSON</span></button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Private Key</button>
