@@ -1,0 +1,240 @@
+body{
+    background-color:black;
+}
+
+
+
+.navsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.bannerimage{
+    display: none;
+}
+.navdiv{
+   
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+
+}
+
+.mylink{
+    color: #848296;
+    fill: #848296;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.mylink:active{
+    color:#BC3FEA;
+    text-decoration: none;
+}
+
+.active{
+    color:#BC3FEA;
+    text-decoration: none;
+}
+
+.mylink:hover{
+    color:#BC3FEA;
+    text-decoration: underline;
+}
+
+.herosection{
+  
+    min-height:55vh;
+
+    padding: 50px 80px;
+    color:white;
+    
+}
+
+.mycontainer{
+    padding: 10px 80px;
+}
+
+.bighead{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.smallhead{
+    font-weight: 600;
+    font-size:40px;
+}
+
+.herobtn{
+    background: #BC3FEA;
+    padding: 15px 33px;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.custom-hr {
+    margin: 10px 0; /* Adjust the margin as needed for the desired space */
+    border: 0;
+    height: 1px;
+    background: #333; /* Customize the color of the horizontal line */
+
+  }
+
+  .fix{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+
+  }
+
+  .fixitem{
+      width:33%;
+      height:350px;
+      
+      border-radius: 15px;
+      border: 1.8px solid #848296;
+      text-align: center;
+  }
+
+  .fixitemtwo{
+    width:49%;
+    height:440px;
+    
+    border-radius: 15px;
+    border: 1.8px solid #848296;
+    text-align: center;
+}
+
+  .spanner{
+      width:85px;
+  }
+
+  .itemhead{
+      color:white;
+      font-size:24px;
+      font-weight: 500;
+  }
+
+  .itempara{
+      color:white;
+  }
+
+  .itembtn{
+      background: #BC3FEA;
+      color:white;
+      padding:8px 25px;
+  }
+
+
+  .footertext{
+    color: #848296;
+  }
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .navsection{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding:35px;
+    }
+    .bannerimage{
+        display: block;
+        width:35px;
+    }
+    .navdiv{
+       
+        display: none;
+    
+    }
+
+
+    .herosection{
+  
+        min-height:55vh;
+    
+        padding: 30px 50px;
+        color:white;
+        
+    }
+    
+    .mycontainer{
+        padding: 10px 50px;
+    }
+    
+    .bighead{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .smallhead{
+        font-weight: 600;
+        font-size:20px;
+    }
+    
+    .herobtn{
+        background: #BC3FEA;
+        padding: 10px 25px;
+        color: white;
+        font-weight: 500;
+        
+    }
+    
+
+
+
+
+    .fix{
+       display: block;
+  
+    }
+  
+    .fixitem{
+        width:100%;
+        height:350px;
+        
+        border-radius: 15px;
+        border: 1.8px solid #848296;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+  
+    .fixitemtwo{
+      width:100%;
+      height:460px;
+      
+      border-radius: 15px;
+      border: 1.8px solid #848296;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+    .spanner{
+        width:75px;
+    }
+  
+    .itemhead{
+        color:white;
+        font-size:24px;
+        font-weight: 500;
+    }
+  
+    .itempara{
+        color:white;
+    }
+  
+    .itembtn{
+        background: #BC3FEA;
+        color:white;
+        padding:8px 25px;
+    }
+    
+    
+
+  }

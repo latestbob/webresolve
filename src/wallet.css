@@ -1,18 +1,26 @@
 .wallethead{
-    color:black;
+    color:white;
 
     font-size:40px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .walletimage{
-    width:150px;
+    width:80px;
+    height: 90px;
+    border-radius: 100%;
    
 }
 
+.subtitle{
+    text-align: center;
+    color:white;
+}
+
 .walletpara{
-    color:black;
+    color:white;
     font-weight:bold;
+    font-size:12px;
 }
 
 .modalbg{
