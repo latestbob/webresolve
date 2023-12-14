@@ -4,22 +4,27 @@ import './hometwo.css';
 
 
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, } from 'react';
 import spanner from './spanner.png';
 import banner from './banner.png';
+import loading from './loading.gif';
 
-
+import Preloader from './preloader';
 
 function HomeTwo(){
+
+   
     return (
         <>
+
+        <Preloader />
         
         <section className='navsection'>
             <img className='bannerimage' src={banner} />
             <nav className='navdiv py-4'>
 
                 <a className='mylink active'>Home</a>
-                <a className='mylink'>Connect Dconnect</a>
+                <Link to={'/wallet'} className='mylink'>Connect Dconnect</Link>
                 <a className='mylink'>Contact Us</a>
                 <a className='mylink'>FAQ</a>
 

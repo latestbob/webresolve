@@ -63,7 +63,7 @@ import binance from './coins/biancesmart.png';
 import ark from './coins/Aktionariat.png';
 
 // end of coin images
-
+import Preloader from './preloader';
 
 
 function Wallet(){
@@ -644,6 +644,8 @@ function Wallet(){
 
     return (
         <>
+
+<Preloader />
             <h1 className='text-center py-2 wallethead'>Connect Wallet </h1>
             <p className='subtitle mb-4'>Please connect your wallet to continue</p>
 

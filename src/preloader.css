@@ -1,0 +1,21 @@
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Semi-transparent white background */
+    z-index: 1000; /* Ensure the preloader appears above other elements */
+    transition: left 0.5s ease-in-out; 
+  }
+
+  .preloader-container.active {
+    left: 0; /* Slide in from the left when the "active" class is present */
+  }
+
+  .loaderimage{
+      width:70px;
+  }

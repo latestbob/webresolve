@@ -3,6 +3,19 @@ body{
 }
 
 
+.loadingcontainer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.loadinghead{
+    color:white;
+    font-weight: bold;
+    font-size:40px;
+}
+
 
 .navsection{
     display: flex;
